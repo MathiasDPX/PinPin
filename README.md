@@ -1,8 +1,7 @@
 # PinPin
-PinPin allow thread owner to pin message in there thread
+PinPin permet au auteur de thread d'épinglé des messages
 
 # How to use 
-Vous devez être l'auteur d'un thread pour pouvoir pin/unpin un message
-You sould be thread owner to pin/unpin messages
+Vous devez être l'auteur du thread pour épinglé/deépinglé un message
 
-Right-Click on a message  > Applications > Pin/Unpin
+Clique droit sur un message > Applications > Pin/Unpin
