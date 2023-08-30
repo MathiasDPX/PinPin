@@ -22,6 +22,8 @@ async def pin(interaction: discord.Interaction, message: discord.Message):
                 try:
                     await message.pin()
                     await interaction.response.send_message(f"Message épingle avec succès", ephemeral=True)
+                    message = await interaction.original_response()
+                    print(f"{interaction.user.name} a pin le message #{message.id} dans {message.channel.name}")
                 except Exception as e:
                     await interaction.response.send_message("Impossible d'épingler votre message", ephemeral=True)
                     print(e)
@@ -38,6 +40,8 @@ async def pin(interaction: discord.Interaction, message: discord.Message):
                     try:
                         await message.unpin()
                         await interaction.response.send_message(f"Message deépingle avec succès", ephemeral=True)
+                        message = await interaction.original_response()
+                        print(f"{interaction.user.name} a unpin le message #{message.id} dans {message.channel.name}")
                     except Exception as e:
                         await interaction.response.send_message("Impossible de deépingler votre message", ephemeral=True)
                         print(e)
