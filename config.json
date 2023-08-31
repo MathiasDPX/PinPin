@@ -1,0 +1,22 @@
+{
+    "TOKEN": "YOUR_BOT_TOKEN",
+    "BOT_PREFIX": ".",
+    "Activity": "vos pins",
+    "messages": {
+        "pin": {
+       		"success": "Message épinglé avec succès",
+        	"error": "Impossible d'épinglé votre message"
+        },
+        "unpin": {
+        	"success": "Message déepinglé avec succès",
+        	"error": "Impossible de déepinglé votre message",
+       		"need": "Le message doit être épinglé pour être déepinglé"
+        },
+        "owner_only": "Vous devez être l'auteur d'un thread pour pin/unpin des messages",
+        "post_only": "Vous devez être dans un post pour pin/unpin un message"
+    },
+    "logs": {
+        "pin": "{user} a pin le message #{messageId} dans {channel}",
+        "unpin": "{user} a unpin le message #{messageId} dans {channel}"
+    }
+}
